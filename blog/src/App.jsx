@@ -1,10 +1,10 @@
-
-import './App.css';
+import './App.css'
+import Nav from './Nav';
 
 function App() {
   return (
     <>
-    <h1>인녕하세요</h1>
+      <Nav />
     </>
   );
 }
