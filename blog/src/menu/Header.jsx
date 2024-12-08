@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <>
+    <header>
       <img
         src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
         className="w3-margin"
@@ -18,6 +18,6 @@ export default function Header() {
         </p>
         <p className="w3-tag w3-text-white">Check out my photos.</p>
       </div>
-    </>
+    </header>
   );
 }

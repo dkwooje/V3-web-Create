@@ -3,30 +3,38 @@ export default function Main() {
     <>
       <div className="links-container">
         <a
-          href="#"
+          href="https://www.naver.com"
           className="w3-button w3-hover-blue w3-large w3-yellow"
-          style={{ width: '350px', target: '_blank' }}
+          style={{ width: '350px' }}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Travel
         </a>
         <a
-          href="#"
+          href="https://www.naver.com"
           className="w3-button w3-hover-blue w3-large w3-yellow"
-          style={{ width: '350px', target: '_blank' }}
+          style={{ width: '350px' }}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Experiences
         </a>
         <a
-          href="#"
+          href="https://www.naver.com"
           className="w3-button w3-hover-blue w3-large w3-yellow"
-          style={{ width: '350px', target: '_blank' }}
+          style={{ width: '350px' }}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Creative
         </a>
         <a
-          href="#"
+          href="https://www.naver.com"
           className="w3-button w3-hover-blue w3-large w3-yellow"
-          style={{ width: '350px', target: '_blank' }}
+          style={{ width: '350px' }}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Blog
         </a>
