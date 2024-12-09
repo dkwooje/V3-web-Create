@@ -92,8 +92,11 @@ function App() {
               <b>NEW FOUNDLAND</b>
             </h1>
             <h6>
-              <button className="w3-button w3-round w3-pale-red w3-padding-large w3-large w3-hover-opacity-off">
-                <a href="#Contact">BOOK NOW</a>
+              <button
+                className="w3-button w3-round w3-pale-red w3-padding-large w3-large w3-hover-opacity-off"
+                onClick={() => (window.location.href = '#Contact')}
+              >
+                BOOK NOW
               </button>
             </h6>
           </div>
@@ -135,8 +138,11 @@ function App() {
                   sodales pellentesque elementum.
                 </p>
                 <p>
-                  <button className="w3-button w3-round w3-pale-red w3-block">
-                    <a href="#Contact">BOOK NOW</a>
+                  <button
+                    className="w3-button w3-round w3-pale-red w3-block"
+                    onClick={() => (window.location.href = '#Contact')}
+                  >
+                    NOW
                   </button>
                 </p>
               </div>
@@ -158,8 +164,11 @@ function App() {
                   sodales pellentesque elementum.
                 </p>
                 <p>
-                  <button className="w3-button w3-round w3-pale-red w3-block">
-                    <a href="#Contact">BOOK NOW</a>
+                  <button
+                    className="w3-button w3-round w3-pale-red w3-block"
+                    onClick={() => (window.location.href = '#Contact')}
+                  >
+                    BOOK NOW
                   </button>
                 </p>
               </div>
@@ -181,8 +190,11 @@ function App() {
                   sodales pellentesque elementum.
                 </p>
                 <p>
-                  <button className="w3-button w3-round w3-pale-red w3-block">
-                    <a href="#Contact">BOOK NOW</a>
+                  <button
+                    className="w3-button w3-round w3-pale-red w3-block"
+                    onClick={() => (window.location.href = '#Contact')}
+                  >
+                    BOOK NOW
                   </button>
                 </p>
               </div>
