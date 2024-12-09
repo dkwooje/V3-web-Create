@@ -1,78 +1,14 @@
 import './App.css';
 import { useState } from 'react';
+import Headline from './menu/Headline';
 
 function App() {
   const [date, setDate] = useState('2024-11-16T20:00');
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  function myFunction() {
-    const x = document.getElementById('demo');
-    if (x.className.indexOf('w3-show') === -1) {
-      x.className += ' w3-show';
-    } else {
-      x.className = x.className.replace(' w3-show', '');
-    }
-  }
-
   return (
     <div className="w3-light-white w3-margin">
-      <div className="w3-bar w3-white w3-text-black">
-        <h2 className="w3-left w3-tag w3-pale-red w3-round">HAPPY PAWS</h2>
-        <a
-          href="#Contact"
-          className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style={{ marginTop: '10px' }}
-        >
-          CONTACT
-        </a>
-        <a
-          href="#Activities"
-          className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style={{ marginTop: '10px' }}
-        >
-          ACTIVITIES
-        </a>
-        <a
-          href="#Trainers"
-          className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style={{ marginTop: '10px' }}
-        >
-          TRAINERS
-        </a>
-        <a
-          href="#Home"
-          className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style={{ marginTop: '10px' }}
-        >
-          HOME
-        </a>
-        <a
-          href="javascript:void(0)"
-          className="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large"
-          style={{ marginTop: '10px' }}
-          onClick={myFunction}
-        >
-          &#9776;
-        </a>
-      </div>
-
-      <div
-        id="demo"
-        className="w3-bar-block w3-white w3-hide w3-hide-large w3-small"
-      >
-        <a href="#Home" className="w3-bar-item w3-button">
-          HOME
-        </a>
-        <a href="#Trainers" className="w3-bar-item w3-button">
-          TRAINERS
-        </a>
-        <a href="#Activities" className="w3-bar-item w3-button">
-          ACTIVITIES
-        </a>
-        <a href="#Contact" className="w3-bar-item w3-button">
-          CONTACT
-        </a>
-      </div>
+      <Headline />
 
       <div className="w3-content" style={{ maxWidth: '1600px' }}>
         <header
