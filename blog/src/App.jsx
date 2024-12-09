@@ -1,19 +1,25 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Headline from './menu/Headline';
 import Header from './menu/Header';
 import Trainer from './menu/Trainers';
 
+export const useScrollTo = () => {
+  const ref = useRef(null);
+
+  const scrollToElement = () => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return [ref, scrollToElement];
+};
+
 function App() {
   const [date, setDate] = useState('2024-11-16T20:00');
   const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('Contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const [contactRef, scrollToContact] = useScrollTo();
 
   return (
     <div className="w3-light-white w3-margin">
@@ -124,7 +130,7 @@ function App() {
           </div>
         </div>
 
-        <div className="w3-white" id="Contact">
+        <div className="w3-white" id="Contact" ref={contactRef}>
           <div className="w3-container w3-padding-32">
             <div className="w3-center w3-padding-32">
               <h2 className="w3-wide">CONTACT</h2>
