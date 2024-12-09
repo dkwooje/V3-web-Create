@@ -2,11 +2,12 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [date, setDate] = useState('2020-11-16T20:00');
+  const [date, setDate] = useState('2024-11-16T20:00');
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   function myFunction() {
     const x = document.getElementById('demo');
-    if (x.className.indexOf('w3-show') == -1) {
+    if (x.className.indexOf('w3-show') === -1) {
       x.className += ' w3-show';
     } else {
       x.className = x.className.replace(' w3-show', '');
@@ -242,7 +243,9 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onClick="document.getElementById(ticketModal).style.display='block'"
+                    onClick={() => {
+                      setIsModalVisible(true);
+                    }}
                   >
                     LEARN MORE
                   </button>
@@ -264,7 +267,9 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onClick="document.getElementById(ticketModal).style.display='block'"
+                    onClick={() => {
+                      setIsModalVisible(true);
+                    }}
                   >
                     LEARN MORE
                   </button>
@@ -286,7 +291,9 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onClick="document.getElementById(ticketModal).style.display='block'"
+                    onClick={() => {
+                      setIsModalVisible(true);
+                    }}
                   >
                     LEARN MORE
                   </button>
