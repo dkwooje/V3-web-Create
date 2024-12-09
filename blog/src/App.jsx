@@ -1,6 +1,18 @@
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [date, setDate] = useState('2020-11-16T20:00');
+
+  function myFunction() {
+    const x = document.getElementById('demo');
+    if (x.className.indexOf('w3-show') == -1) {
+      x.className += ' w3-show';
+    } else {
+      x.className = x.className.replace(' w3-show', '');
+    }
+  }
+
   return (
     <div className="w3-light-white w3-margin">
       <div className="w3-bar w3-white w3-text-black">
@@ -37,7 +49,7 @@ function App() {
           href="javascript:void(0)"
           className="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large"
           style={{ marginTop: '10px' }}
-          onClick="myFunction()"
+          onClick={myFunction}
         >
           &#9776;
         </a>
@@ -71,7 +83,7 @@ function App() {
             className="w3-image"
             src="https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
             alt="Photo by Jamie Street"
-            style={{ width: '1600', heigh: '1060' }}
+            style={{ width: '1600', height: '1060' }}
           ></img>
 
           <div className="w3-display-left w3-padding-large">
@@ -218,7 +230,7 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onClick="document.getElementById('ticketModal').style.display='block'"
+                    onClick="document.getElementById(ticketModal).style.display='block'"
                   >
                     LEARN MORE
                   </button>
@@ -240,7 +252,7 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onClick="document.getElementById('ticketModal').style.display='block'"
+                    onClick="document.getElementById(ticketModal).style.display='block'"
                   >
                     LEARN MORE
                   </button>
@@ -262,7 +274,7 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onClick="document.getElementById('ticketModal').style.display='block'"
+                    onClick="document.getElementById(ticketModal).style.display='block'"
                   >
                     LEARN MORE
                   </button>
@@ -318,9 +330,8 @@ function App() {
                   className="w3-input w3-padding-16 w3-border"
                   type="datetime-local"
                   placeholder="Date and time"
-                  required
-                  name="date"
-                  value="2020-11-16T20:00"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
                 />
               </p>
               <p>
