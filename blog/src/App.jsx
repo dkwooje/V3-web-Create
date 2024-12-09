@@ -8,36 +8,36 @@ function App() {
         <a
           href="#Contact"
           className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style="margin-top:10px;"
+          style={{ marginTop: '10px' }}
         >
           CONTACT
         </a>
         <a
           href="#Activities"
           className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style="margin-top:10px;"
+          style={{ marginTop: '10px' }}
         >
           ACTIVITIES
         </a>
         <a
           href="#Trainers"
           className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style="margin-top:10px;"
+          style={{ marginTop: '10px' }}
         >
           TRAINERS
         </a>
         <a
           href="#Home"
           className="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-          style="margin-top:10px;"
+          style={{ marginTop: '10px' }}
         >
           HOME
         </a>
         <a
           href="javascript:void(0)"
           className="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large"
-          style="margin-top:10px;"
-          onclick="myFunction()"
+          style={{ marginTop: '10px' }}
+          onClick="myFunction()"
         >
           &#9776;
         </a>
@@ -61,19 +61,19 @@ function App() {
         </a>
       </div>
 
-      <div className="w3-content" style="max-width:1600px">
+      <div className="w3-content" style={{ maxWidth: '1600px' }}>
         <header
           className="w3-display-container w3-wide"
-          style="padding-bottom:32px;"
+          style={{ paddingBottom: '32px' }}
           id="Home"
         >
           <img
             className="w3-image"
             src="https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
             alt="Photo by Jamie Street"
-            width="1600"
-            height="1060"
+            style={{ width: '1600', heigh: '1060' }}
           ></img>
+
           <div className="w3-display-left w3-padding-large">
             <h1 className="w3-text-white">DOG CARETAKERS</h1>
             <h1 className="w3-jumbo w3-text-white w3-hide-small">
@@ -113,7 +113,7 @@ function App() {
               <img
                 src="https://images.unsplash.com/photo-1506993708131-b0bf29d16b76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
                 alt="Photo by Sam manns"
-                style="width:100%"
+                style={{ width: '100%' }}
               ></img>
               <div className="w3-container">
                 <h3>Jane Cormick</h3>
@@ -136,7 +136,7 @@ function App() {
               <img
                 src="https://images.unsplash.com/photo-1553322378-eb94e5966b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                 alt="Photo by Manuel Meza"
-                style="width:100%"
+                style={{ width: '100%' }}
               ></img>
               <div className="w3-container">
                 <h3>Kristen Arnheim</h3>
@@ -159,7 +159,7 @@ function App() {
               <img
                 src="https://images.unsplash.com/photo-1539440860461-f30442bf7ab6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                 alt="Photo by Wieger Stienstra"
-                style="width:100%"
+                style={{ width: '100%' }}
               ></img>
               <div className="w3-container">
                 <h3>Ola Truntwistle</h3>
@@ -201,12 +201,12 @@ function App() {
               </p>
             </div>
 
-            <div className="w3-row-padding" style="margin:0 -16px">
+            <div className="w3-row-padding" style={{ margin: '0 -16px' }}>
               <div className="w3-third">
                 <img
                   src="https://images.unsplash.com/photo-1611601303737-6496949997cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                   alt="Photo by Meritt Thomas"
-                  style="width:100%"
+                  style={{ width: '100%' }}
                   className="w3-hover-opacity"
                 ></img>
                 <div className="w3-container w3-white">
@@ -218,7 +218,7 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onclick="document.getElementById('ticketModal').style.display='block'"
+                    onClick="document.getElementById('ticketModal').style.display='block'"
                   >
                     LEARN MORE
                   </button>
@@ -228,7 +228,7 @@ function App() {
                 <img
                   src="https://images.unsplash.com/photo-1542583387-a3955a8b1d2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                   alt="Photo by Humphrey Muleba"
-                  style="width:100%"
+                  style={{ width: '100%' }}
                   className="w3-hover-opacity"
                 ></img>
                 <div className="w3-container w3-white">
@@ -240,7 +240,7 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onclick="document.getElementById('ticketModal').style.display='block'"
+                    onClick="document.getElementById('ticketModal').style.display='block'"
                   >
                     LEARN MORE
                   </button>
@@ -250,7 +250,7 @@ function App() {
                 <img
                   src="https://images.unsplash.com/photo-1628639423534-a0ee52b9db19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                   alt="Photo by Marcos Ferreira"
-                  style="width:100%"
+                  style={{ width: '100%' }}
                   className="w3-hover-opacity"
                 ></img>
                 <div className="w3-container w3-white">
@@ -262,7 +262,7 @@ function App() {
                   </p>
                   <button
                     className="w3-button w3-round w3-pale-red w3-margin-bottom"
-                    onclick="document.getElementById('ticketModal').style.display='block'"
+                    onClick="document.getElementById('ticketModal').style.display='block'"
                   >
                     LEARN MORE
                   </button>
