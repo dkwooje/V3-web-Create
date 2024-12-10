@@ -2,6 +2,14 @@ import { useState } from 'react';
 
 export default function Contact() {
   const [date, setDate] = useState('2024-11-16T20:00');
+  const [name, setName] = useState('아무개');
+  const [number, setNumber] = useState('0');
+  const [message, setMessage] = useState('');
+
+  console.log(`date: ${date}`);
+  console.log(`name: ${name}`);
+  console.log(`number: ${number}`);
+  console.log(`message: ${message}`);
 
   return (
     <div className="w3-container w3-padding-32">
@@ -31,7 +39,8 @@ export default function Contact() {
             type="text"
             placeholder="Name"
             required
-            name="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </p>
         <p>
@@ -40,7 +49,8 @@ export default function Contact() {
             type="number"
             placeholder="Service"
             required
-            name="Service"
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
           />
         </p>
         <p>
@@ -58,7 +68,8 @@ export default function Contact() {
             type="text"
             placeholder="Message"
             required
-            name="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </p>
         <p>
