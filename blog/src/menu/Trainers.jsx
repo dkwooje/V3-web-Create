@@ -1,4 +1,4 @@
-export default function Trainer({ onContactClick }) {
+export default function Trainer({ onClick }) {
   return (
     <div className="w3-center w3-padding-32">
       <h2 className="w3-wide w3-center">TRAINERS</h2>
@@ -34,7 +34,7 @@ export default function Trainer({ onContactClick }) {
             <p>
               <button
                 className="w3-button w3-round w3-pale-red w3-block"
-                onClick={onContactClick}
+                onClick={onClick}
               >
                 NOW
               </button>
@@ -60,7 +60,7 @@ export default function Trainer({ onContactClick }) {
             <p>
               <button
                 className="w3-button w3-round w3-pale-red w3-block"
-                onClick={onContactClick}
+                onClick={onClick}
               >
                 BOOK NOW
               </button>
@@ -86,7 +86,7 @@ export default function Trainer({ onContactClick }) {
             <p>
               <button
                 className="w3-button w3-round w3-pale-red w3-block"
-                onClick={onContactClick}
+                onClick={onClick}
               >
                 BOOK NOW
               </button>
