@@ -6,10 +6,12 @@ export default function Contact() {
   const [number, setNumber] = useState('0');
   const [message, setMessage] = useState('');
 
-  console.log(`date: ${date}`);
-  console.log(`name: ${name}`);
-  console.log(`number: ${number}`);
-  console.log(`message: ${message}`);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted with values:", { date, name, number, message });
+    // API 요청 또는 다른 동작 추가
+  };
+
 
   return (
     <div className="w3-container w3-padding-32">
@@ -32,7 +34,7 @@ export default function Contact() {
           rutrum lacinia orci.
         </p>
       </div>
-      <form action="/action_page.php" target="_blank">
+      <form action="/action_page.php" target="_blank" onSubmit={handleSubmit }>
         <p>
           <input
             className="w3-input w3-padding-16 w3-border"
